@@ -1,6 +1,6 @@
 # Real Material Smoke Tests
 
-This file records five cross-domain smoke tests for `good-story` using public scholarly materials. The test prompts are full-text-informed paraphrases, not abstracts, press releases, or copied source text.
+This file records six cross-domain smoke tests for `good-story` using public scholarly materials. The test prompts are full-text-informed paraphrases, not abstracts, press releases, or copied source text.
 
 These tests are meant to check whether the skill can handle real material pressure before release: strong public papers often invite attractive but unsafe storylines.
 
@@ -230,6 +230,46 @@ It tests whether `good-story` can keep biomedical promise separate from clinical
 - Implies cancer mortality reduction from detection performance alone.
 - Ignores false positives, downstream procedures, safety, or prospective evidence.
 
+## Case 6: Earth System Science
+
+### Source
+
+Richardson, K., et al. (2023). "Earth beyond six of nine planetary boundaries." *Science Advances*. https://doi.org/10.1126/sciadv.adh2458
+
+### Full-Text Basis
+
+- Publisher article checked via Science Advances: https://www.science.org/doi/10.1126/sciadv.adh2458
+- Open PDF checked from MAHB/Stanford: https://mahb.stanford.edu/wp-content/uploads/2023/10/sciadv.adh2458.pdf
+- Checked the updated planetary-boundaries status, control-variable rationale, uncertainty/risk-zone discussion, cross-boundary interaction framing, and new/updated variables including human appropriation of net primary production for functional biosphere integrity.
+
+### Why This Source
+
+It tests whether `good-story` can handle a high-stakes synthesis without turning a scientific risk framework into an exact threshold claim or a direct policy prescription.
+
+### Prompt
+
+```text
+用 $good-story 检查这个地球系统科学真实材料应该怎么讲。下面是基于全文阅读整理的转述材料，不是论文摘要：
+
+一篇 Science Advances 论文更新了 planetary boundaries 框架，对九个关键地球系统过程给出控制变量和当前状态判断。材料显示六个边界已经被越过，海洋酸化接近边界，气溶胶在区域尺度超过边界，平流层臭氧有所恢复。全文强调各边界之间存在相互作用，并引入或更新了若干控制变量，例如用人类占用净初级生产力来表达生物圈功能完整性的一个维度。论文还说明风险区间和边界值带有不确定性与预防原则色彩，并不等于每个边界都有精确阈值或可直接推出单一政策方案。
+
+请先做地球系统科学领域校准，再给出最强故事、证据边界、不能说过头的地方，以及一句不过度政策化的中心结论。
+```
+
+### Must Pass
+
+- Treats the protagonist as a planetary-scale risk-assessment framework, not a direct policy model.
+- Frames the strongest story around updated control variables, cross-boundary interactions, and systemic risk outside Holocene-like conditions.
+- Names boundaries: uncertainty in control variables, precautionary threshold setting, regional/global scale differences, and limits of direct policy inference.
+- Avoids saying the paper proves a precise collapse date, a single intervention path, or a complete causal model for all Earth-system change.
+
+### Release Blockers
+
+- Claims the framework provides exact tipping points for all processes.
+- Turns boundary transgression into proof of inevitable collapse.
+- Treats the result as a complete policy prescription.
+- Ignores uncertainty, scale, or cross-boundary interactions.
+
 ## Run Log Template
 
 ```markdown
@@ -245,6 +285,7 @@ Skill version or commit:
 | AI4Science | Pass / Partial / Fail |  |  |
 | Social science | Pass / Partial / Fail |  |  |
 | Biomedical | Pass / Partial / Fail |  |  |
+| Earth system science | Pass / Partial / Fail |  |  |
 
 Release blockers observed:
 

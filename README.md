@@ -218,15 +218,22 @@ git clone https://github.com/Rimagination/good-story.git ~/.claude/skills/good-s
 - [评测场景](evals/scenarios.md)：摘要诊断、图的顺序、AI4Science、生物医学、社会科学、遥感中文输出、早期项目候选故事、rebuttal 准备和来源深度。
 - [真实材料快速验收测试](evals/real-material-smoke-tests.md)：用基于全文阅读的转述材料检查生态、遥感、AI4Science、社会科学和生物医学真实公开来源。
 - [当前评测基线](evals/baseline-2026-06-02.md)：记录 9 个场景的手工干跑结果和剩余风险。
-- [新鲜会话实测记录](evals/fresh-session-run-2026-06-02.md)：记录 9 个评测场景和 5 个真实材料快速验收测试的 fresh-session 结果。
+- [新鲜会话实测记录](evals/fresh-session-run-2026-06-02.md)：记录 9 个评测场景和 6 个真实材料快速验收测试的 fresh-session 结果。
 - [成熟度审计](evals/maturity-audit-2026-06-02.md)：说明当前能发布到什么程度，以及离 Release candidate 和 Mature 还差哪些证据。
+- [Mature 证据台账](evals/mature-evidence-2026-06-02.md)：记录 15 个案例计数和仍缺的外部用户/评审者证据。
 
-当前状态是 Release candidate（发布候选）：静态产品校验通过，9 个评测场景和 5 个跨领域真实材料快速验收测试已在 fresh sessions 中通过。它还不是 Mature；Mature 需要更多真实用户和跨领域重复使用记录。
+当前状态是 Release candidate（发布候选）：静态产品校验通过，9 个评测场景和 6 个跨领域真实材料快速验收测试已在 fresh sessions 中通过。15 个案例和 5 个以上领域的门槛已经满足；它还不是 Mature，因为还缺 3 个经过验证的非作者用户或评审者案例。
 
 可以运行这个静态检查脚本：[validate-product.ps1](scripts/validate-product.ps1)。
 
 ```powershell
 .\scripts\validate-product.ps1
+```
+
+更严格的 Mature 证据门槛用 [validate-mature.ps1](scripts/validate-mature.ps1) 检查：
+
+```powershell
+.\scripts\validate-mature.ps1
 ```
 
 ### 发布前检查
@@ -507,17 +514,24 @@ This is not just a prompt bundle. It turns scientific-writing advice from reliab
 - [Evaluation guide](evals/README.md): how to run scenarios and judge pass/fail.
 - [Fresh-session runbook](evals/fresh-session-runbook.md): how to run fresh sessions, score answers, and record failures.
 - [Evaluation scenarios](evals/scenarios.md): abstract diagnosis, figure order, AI4Science, biomedical overclaiming, social science, remote-sensing Chinese output, early candidate stories, rebuttal preparation, and source depth.
-- [Real material smoke tests](evals/real-material-smoke-tests.md): five full-text-informed paraphrased public-material cases across ecology, remote sensing, AI4Science, social science, and biomedical research.
+- [Real material smoke tests](evals/real-material-smoke-tests.md): six full-text-informed paraphrased public-material cases across ecology, remote sensing, AI4Science, social science, biomedical research, and earth system science.
 - [Current baseline](evals/baseline-2026-06-02.md): manual dry-run results and remaining risks for the nine scenarios.
-- [Fresh-session run record](evals/fresh-session-run-2026-06-02.md): recorded fresh-session results for the nine evaluation scenarios and five real-material smoke tests.
+- [Fresh-session run record](evals/fresh-session-run-2026-06-02.md): recorded fresh-session results for the nine evaluation scenarios and six real-material smoke tests.
 - [Maturity audit](evals/maturity-audit-2026-06-02.md): current publishability, Release candidate evidence, and Mature criteria.
+- [Mature evidence ledger](evals/mature-evidence-2026-06-02.md): counted 15-case evidence and the remaining external-user/reviewer gap.
 
-Current status is Release candidate: static product validation passes, and nine evaluation scenarios plus five cross-domain real-material smoke tests passed in fresh sessions. It is not Mature yet; Mature status requires repeated real use and cross-field feedback.
+Current status is Release candidate: static product validation passes, and nine evaluation scenarios plus six cross-domain real-material smoke tests passed in fresh sessions. It is not Mature yet; the 15-case and 5-field thresholds are met, but Mature still requires three verified non-author user or reviewer cases.
 
 Run the static product checks with [validate-product.ps1](scripts/validate-product.ps1):
 
 ```powershell
 .\scripts\validate-product.ps1
+```
+
+Check the stricter Mature evidence gate with [validate-mature.ps1](scripts/validate-mature.ps1):
+
+```powershell
+.\scripts\validate-mature.ps1
 ```
 
 ### Release Checklist

@@ -52,6 +52,12 @@ Record or update the run summary in `evals/baseline-2026-06-02.md`, `evals/fresh
 
 Update the maturity audit in `evals/maturity-audit-2026-06-02.md` or create a newer dated audit when the release status changes.
 
+For Mature status, update `evals/mature-evidence-2026-06-02.md` or a newer ledger and run:
+
+```powershell
+.\scripts\validate-mature.ps1
+```
+
 Release blockers:
 
 - inventing evidence;
@@ -97,7 +103,7 @@ Use these labels:
 
 - **Draft:** core idea exists, but examples or evals are missing.
 - **Beta:** README, skill logic, examples, and evals exist; not yet tested across many real user materials.
-- **Release candidate:** eval scenarios pass and the 5 real-material smoke tests have been checked in fresh sessions.
-- **Mature:** repeated use across fields shows stable story diagnosis, claim calibration, and language quality.
+- **Release candidate:** eval scenarios pass and the real-material smoke tests have been checked in fresh sessions.
+- **Mature:** `scripts/validate-mature.ps1` passes, including 15 passed cases across at least 5 fields and 3 verified non-author user or reviewer cases.
 
 Current status: Release candidate. Current target: publish once the public repository URL resolves, then move toward Mature through repeated real-user and cross-field evidence.

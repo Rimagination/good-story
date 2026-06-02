@@ -7,9 +7,12 @@ All notable changes to `good-story` are tracked here.
 ### Added
 
 - `.gitignore` and `.gitattributes` for release repository hygiene and binary asset handling.
+- `evals/mature-evidence-2026-06-02.md` to count Mature evidence separately from release-candidate evidence.
+- `evals/external-feedback-template.md` for non-author user or reviewer evidence.
+- `scripts/validate-mature.ps1` for the stricter Mature gate.
 - `evals/fresh-session-runbook.md` with fresh-session setup, scoring labels, release blockers, and baseline record format.
-- `evals/fresh-session-run-2026-06-02.md` recording fresh-session results for 9 regression scenarios and 5 real-material smoke tests.
-- `evals/real-material-smoke-tests.md` with five full-text-informed paraphrased public-material smoke tests across ecology, remote sensing, AI4Science, social science, and biomedical research.
+- `evals/fresh-session-run-2026-06-02.md` recording fresh-session results for 9 regression scenarios and 6 real-material smoke tests.
+- `evals/real-material-smoke-tests.md` with six full-text-informed paraphrased public-material smoke tests across ecology, remote sensing, AI4Science, social science, biomedical research, and earth system science.
 - `evals/maturity-audit-2026-06-02.md` to record current publishability and remaining evidence before Release candidate or Mature status.
 - `SKILL.md` Source Depth Rule to prevent paper-level story diagnosis from title, DOI, abstract, press release, or citation metadata alone.
 - Scenario 9 in `evals/scenarios.md` to regression-test source-depth behavior.
@@ -23,6 +26,7 @@ All notable changes to `good-story` are tracked here.
 - Product validation now checks evaluation coverage, real-material full-text basis notes, the maturity audit file, agent metadata, local markdown links, README assets, release hygiene files, and Chinese terminology consistency.
 - Mature criteria now include measurable cross-field and non-author use evidence instead of only a general repeated-use statement.
 - Release documentation now treats a failing `git ls-remote origin` as a public-announcement blocker.
+- Mature evidence now records 15 passed independent/fresh-session cases across more than 5 fields, while correctly leaving the external user/reviewer gate unmet.
 
 ## 0.4.0 - Scale-Use Documentation - 2026-06-02
 

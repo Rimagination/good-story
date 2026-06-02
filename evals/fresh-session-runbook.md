@@ -7,7 +7,7 @@ Use this runbook to evaluate `good-story` before Release candidate or Mature sta
 Run both files:
 
 - `evals/scenarios.md`: 9 regression scenarios.
-- `evals/real-material-smoke-tests.md`: 5 full-text-informed real-material smoke tests.
+- `evals/real-material-smoke-tests.md`: 6 full-text-informed real-material smoke tests.
 
 Do not edit prompts while running. If a prompt is flawed, record the flaw, fix the prompt in a separate revision, and rerun.
 
@@ -81,6 +81,7 @@ Runner:
 | Real material 3 | Pass / Partial / Fail |  |  |  |
 | Real material 4 | Pass / Partial / Fail |  |  |  |
 | Real material 5 | Pass / Partial / Fail |  |  |  |
+| Real material 6 | Pass / Partial / Fail |  |  |  |
 
 Release blockers observed:
 
@@ -92,7 +93,7 @@ Decision:
 ## Decision Rules
 
 - Public beta: product files and static validation pass, but fresh-session runs are incomplete.
-- Release candidate: all 14 cases pass in fresh sessions, or partial results have documented non-blocking explanations.
-- Mature: repeated cross-field use shows stable story diagnosis, claim calibration, source-depth behavior, and Chinese language quality.
+- Release candidate: all 15 cases pass in fresh sessions, or partial results have documented non-blocking explanations.
+- Mature: `scripts/validate-mature.ps1` passes, with at least 15 passed cases across 5 fields and at least 3 non-author user or reviewer cases.
 
 Never upgrade status because the README looks polished. Upgrade only from recorded evaluation evidence.

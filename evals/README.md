@@ -19,10 +19,12 @@ Files:
 
 - `fresh-session-runbook.md`: step-by-step runbook for fresh-session scoring and failure recording.
 - `scenarios.md`: synthetic regression scenarios for known failure modes.
-- `real-material-smoke-tests.md`: five full-text-informed paraphrased public-material smoke tests across ecology, remote sensing, AI4Science, social science, and biomedical research.
+- `real-material-smoke-tests.md`: six full-text-informed paraphrased public-material smoke tests across ecology, remote sensing, AI4Science, social science, biomedical research, and earth system science.
 - `baseline-2026-06-02.md`: current manual dry-run baseline.
-- `fresh-session-run-2026-06-02.md`: fresh-session run record for all 14 cases.
+- `fresh-session-run-2026-06-02.md`: fresh-session run record for all 15 cases.
 - `maturity-audit-2026-06-02.md`: current publishability decision, Release candidate evidence, and remaining Mature evidence.
+- `mature-evidence-2026-06-02.md`: counted Mature evidence ledger and external-evidence gap.
+- `external-feedback-template.md`: template for recording non-author user or reviewer cases.
 
 ## How To Run
 

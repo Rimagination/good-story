@@ -16,8 +16,9 @@ The skill is ready for early public release as a Release candidate once the publ
 - Release checklist, roadmap, contribution guide, changelog, and output specification.
 - Static product validation through `scripts/validate-product.ps1`.
 - Nine regression scenarios in `evals/scenarios.md`.
-- Five full-text-informed real-material smoke tests in `evals/real-material-smoke-tests.md`.
-- Fresh-session results for all 14 cases in `evals/fresh-session-run-2026-06-02.md`.
+- Six full-text-informed real-material smoke tests in `evals/real-material-smoke-tests.md`.
+- Fresh-session results for all 15 cases in `evals/fresh-session-run-2026-06-02.md`.
+- Mature evidence ledger in `evals/mature-evidence-2026-06-02.md`.
 - Source Depth Rule in `SKILL.md` to prevent story diagnosis from shallow metadata.
 
 ## Fresh Verification
@@ -33,8 +34,9 @@ Latest observed result: pass on 2026-06-02.
 Fresh-session evaluation:
 
 - 9 regression scenarios passed.
-- 5 real-material smoke tests passed.
+- 6 real-material smoke tests passed.
 - No release blocker observed.
+- `scripts/validate-mature.ps1` correctly fails because external user/reviewer evidence is missing.
 
 ## Release Candidate Evidence
 
@@ -42,7 +44,7 @@ Release candidate criteria are currently met:
 
 - Static validation passes.
 - Fresh-session run record exists.
-- All 14 cases passed.
+- All 15 cases passed.
 - No release blocker was observed.
 - Watch items are documented in `evals/fresh-session-run-2026-06-02.md`.
 
@@ -61,8 +63,8 @@ Public announcement should wait until the GitHub repository exists and the READM
 Before calling this Mature:
 
 - Publish the public repository URL used in README install commands.
-- Record at least 15 real-use or independent fresh-session cases across at least 5 fields.
-- Include at least 3 cases from users or reviewers other than the author.
+- Record at least 15 real-use or independent fresh-session cases across at least 5 fields. Current ledger: met.
+- Include at least 3 cases from users or reviewers other than the author. Current ledger: not met.
 - Confirm users can choose templates without extra coaching.
 - Confirm Chinese outputs remain natural under pressure.
 - Confirm field calibration prevents wrong-domain overclaiming in unfamiliar materials.
@@ -84,7 +86,7 @@ Before calling this Mature:
 Recommended:
 
 ```text
-good-story is a Release candidate skill for evidence-faithful scientific storytelling. It has passed static checks, fresh-session regression scenarios, and full-text-informed real-material smoke tests. It is not yet mature until repeated cross-field user feedback is recorded.
+good-story is a Release candidate skill for evidence-faithful scientific storytelling. It has passed static checks, fresh-session regression scenarios, and full-text-informed real-material smoke tests across 15 cases. It is not yet mature until three non-author user or reviewer cases are recorded.
 ```
 
 Avoid:

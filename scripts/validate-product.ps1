@@ -131,7 +131,10 @@ Write-Output 'Checking required product files...'
   'evals\baseline-2026-06-02.md',
   'evals\fresh-session-run-2026-06-02.md',
   'evals\maturity-audit-2026-06-02.md',
-  'scripts\validate-product.ps1'
+  'evals\mature-evidence-2026-06-02.md',
+  'evals\external-feedback-template.md',
+  'scripts\validate-product.ps1',
+  'scripts\validate-mature.ps1'
 ) | ForEach-Object { Assert-File -RelativePath $_ }
 
 Write-Output 'Checking README product entry points...'
@@ -148,7 +151,9 @@ Write-Output 'Checking README product entry points...'
   'evals/baseline-2026-06-02.md',
   'evals/fresh-session-run-2026-06-02.md',
   'evals/maturity-audit-2026-06-02.md',
+  'evals/mature-evidence-2026-06-02.md',
   'scripts/validate-product.ps1',
+  'scripts/validate-mature.ps1',
   'RELEASE.md',
   'CONTRIBUTING.md',
   'CHANGELOG.md',
@@ -178,7 +183,7 @@ Assert-Contains -RelativePath 'evals\scenarios.md' -Pattern 'Source Depth'
 $realMaterialPath = Join-Path $Root 'evals\real-material-smoke-tests.md'
 $realMaterialText = Get-Content -Path $realMaterialPath -Encoding utf8 -Raw
 $fullTextBasisCount = [regex]::Matches($realMaterialText, '(?m)^### Full-Text Basis$').Count
-Assert-True -Condition ($fullTextBasisCount -eq 5) -Message "Expected 5 Full-Text Basis notes, found $fullTextBasisCount"
+Assert-True -Condition ($fullTextBasisCount -eq 6) -Message "Expected 6 Full-Text Basis notes, found $fullTextBasisCount"
 Assert-Contains -RelativePath 'evals\real-material-smoke-tests.md' -Pattern 'abstract-only'
 
 Write-Output 'Checking release checklist...'
@@ -189,7 +194,9 @@ Write-Output 'Checking release checklist...'
   'evals/baseline-2026-06-02.md',
   'evals/fresh-session-run-2026-06-02.md',
   'evals/maturity-audit-2026-06-02.md',
+  'evals/mature-evidence-2026-06-02.md',
   'validate-product.ps1',
+  'validate-mature.ps1',
   'Release candidate',
   'Mature',
   'templates/README.md',

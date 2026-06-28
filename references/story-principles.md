@@ -48,6 +48,22 @@ Operational questions:
 - Which result would make the paper collapse if removed?
 - Which details are true but not story-bearing?
 
+## 1.5. Audience Contract: Editor, Reviewer, Reader
+
+Good structure serves different decision-makers at the same time:
+
+- Editor: needs a fast judgment of significance, novelty, fit, and why the paper deserves scarce attention.
+- Reviewer: needs to verify that the central claim follows from the results, methods, controls, assumptions, and limitations.
+- Field reader: needs to remember the portable contribution and decide whether to read, cite, reuse, challenge, or build on it.
+
+Operational questions:
+
+- Editor question: Why should this paper be considered now, by this journal or audience?
+- Reviewer question: Which claim is most vulnerable, and where is the evidence or qualifier that protects it?
+- Reader question: What would a competent reader tell a colleague one year later?
+
+If a story excites the editor but makes review logic hard to inspect, it is hype-prone. If it satisfies reviewers but gives readers no memorable contribution, it is under-framed. If it is memorable but not verifiable, it is not a scientific story.
+
 ## 2. Context-Content-Conclusion at Every Scale
 
 Use C-C-C recursively:
@@ -108,6 +124,15 @@ Do not tell the story in lab-notebook order unless the discovery process itself 
 
 Each figure should answer the question created by the previous figure.
 
+Sanes's practical warning is useful here: a paper is not an autobiography of the project. The only fully allowable fiction in most scientific papers is that results can be presented in a different order from the order in which the work was actually done, as long as the evidence is reported truthfully.
+
+Autobiography check:
+
+- If the paper says "first we tried X, then we tried Y, then we noticed Z", ask whether readers need that discovery path.
+- If a figure exists mainly because it took a lot of work, ask whether it moves belief.
+- If the original question no longer matches the strongest answer, rebuild the introduction around the question the evidence can now answer.
+- If a negative or failed result changes the interpretation, keep it in the evidence map even if it complicates the story.
+
 ## 7. Breadth-Narrow-Breadth
 
 High-impact scientific stories often move:
@@ -130,6 +155,16 @@ Storytelling in science is constrained by truth.
 - Preserve uncertainty when uncertainty is scientifically important.
 
 The best story is not the prettiest possible story; it is the strongest honest story.
+
+Nature Methods' caution is the governing principle: narrative is useful when it illuminates scientific information, but harmful when a perfect story becomes an end in itself. A clean narrative must never justify cherry-picking, obscuring failed experiments, hiding uncertainty, or making a result sound more resolved than it is.
+
+Narrative-risk questions:
+
+- What evidence does not fit the clean version of the story?
+- Does that evidence merely distract, or does it change the conclusion's scope?
+- Are null, negative, failed, or unexplained results needed to judge the claim?
+- Would a skeptical reviewer accuse the story of selecting only convenient results?
+- What sentence can include the complication without destroying the central contribution?
 
 ## 9. Useful Story Archetypes
 

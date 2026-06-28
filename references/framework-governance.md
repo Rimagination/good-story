@@ -22,6 +22,7 @@ Use storytelling to:
 - Make the gap and stakes visible.
 - Calibrate claims to data.
 - Help readers remember what changed.
+- Help editors notice the stakes, reviewers inspect the logic, and readers carry away the contribution.
 
 ## Priority Stack
 
@@ -35,6 +36,36 @@ If frameworks disagree, apply them in this order:
 6. Style: polish language, flow, emphasis, and memorability.
 
 The rule: a lower layer can make a higher layer clearer, but cannot make it less true.
+
+## Narrative Risk Rule
+
+Narrative is a tool for illumination, not a license to simplify away scientific difficulty. A story becomes risky when the desire for a clean arc starts deciding which evidence is visible.
+
+Treat these as red flags:
+
+- The strongest sentence would be weakened by a negative, null, failed, or unexplained result that is currently hidden.
+- A figure, robustness check, subgroup, sensitivity analysis, or limitation is moved out of sight because it interrupts the arc.
+- The title or abstract implies a measurement, mechanism, causal path, or generality that the study did not directly test.
+- The discussion frames remaining uncertainty as routine future work when it actually changes the claim's scope.
+- The paper reads like a perfect resolution even though the evidence supports only a boundary condition, candidate mechanism, or partial explanation.
+
+Repair move:
+
+`central contribution + visible complication + scoped conclusion`
+
+The best story is often not the smoothest story. It is the story in which the complications define the claim's honest strength.
+
+## Audience Contract
+
+Before finalizing a story, test it against three contracts:
+
+| Audience | What they need | Failure mode |
+| --- | --- | --- |
+| Editor | Stakes, novelty, fit, and why the paper deserves attention now | Technically correct but not worth scarce attention |
+| Reviewer | Inspectable logic from claim to evidence, controls, qualifiers, and rebuttals | Memorable but under-supported or hard to verify |
+| Field reader | A portable sentence that changes what they think, measure, predict, build, or do | Complete but forgettable data report |
+
+Do not satisfy one audience by betraying another. A broad framing can attract an editor only if the reviewer can verify the narrower evidence path. A detailed evidence map can satisfy a reviewer only if the reader can still remember the central contribution.
 
 ## Framework Concordance
 
@@ -70,6 +101,8 @@ Before accepting a story, answer:
 - What alternative explanation would a tough reviewer raise?
 - Which negative, null, or limiting result changes the interpretation?
 - Which word would be too strong: proves, demonstrates, reveals, universal, first, mechanism, causal, transformative?
+- Which result or limitation would make the story less clean but more honest?
+- Would the editor, reviewer, and field reader each understand the same central contribution?
 - What is the strongest honest sentence, after those checks?
 
 ## Better Paper Standard

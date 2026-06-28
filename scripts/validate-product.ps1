@@ -224,13 +224,14 @@ $lines = Get-Content -Path $readme -Encoding utf8
 $refStart = Find-LineIndex -Lines $lines -Prefix $refHeader
 Assert-True -Condition ($refStart -ge 0) -Message 'README missing References heading line'
 $refs = $lines[($refStart + 1)..($lines.Count - 1)] | Where-Object { $_ -match '^\d+\. ' }
-Assert-True -Condition ($refs.Count -eq 23) -Message "Expected 23 numbered references, found $($refs.Count)"
-for ($i = 1; $i -le 23; $i++) {
+$expectedReferenceCount = 25
+Assert-True -Condition ($refs.Count -eq $expectedReferenceCount) -Message "Expected $expectedReferenceCount numbered references, found $($refs.Count)"
+for ($i = 1; $i -le $expectedReferenceCount; $i++) {
   Assert-True -Condition (($refs | Where-Object { $_ -match "^$i\. " }).Count -eq 1) -Message "Missing or duplicate reference $i"
 }
 
 $used = [regex]::Matches($beforeRefs, '\[(\d+)\]') | ForEach-Object { [int]$_.Groups[1].Value } | Sort-Object -Unique
-$defined = 1..23
+$defined = 1..$expectedReferenceCount
 $missingDefs = $used | Where-Object { $_ -notin $defined }
 $unusedDefs = $defined | Where-Object { $_ -notin $used }
 Assert-True -Condition (-not $missingDefs) -Message ('Citation without definition: ' + ($missingDefs -join ', '))

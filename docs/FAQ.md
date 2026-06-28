@@ -4,6 +4,14 @@
 
 No. Polishing improves sentences. `good-story` first checks whether the story itself can stand: tension, evidence, claim boundary, reviewer resistance, and field consequence.
 
+## Why does storytelling matter in research writing?
+
+Because strong research still has to cross a reader's limited attention, memory, and trust. A good story helps editors notice why the work matters, helps reviewers inspect the logic, and helps field readers remember the contribution. It is not decoration after the science; it is the structure that makes the science evaluable.
+
+## Does this mean making a weak paper sound stronger?
+
+No. The skill should make the strongest honest story visible, not inflate the claim. If a limitation, negative result, failed explanation, or alternative mechanism changes how the result should be interpreted, it belongs in the story boundary instead of being hidden.
+
 ## Do I need a complete manuscript?
 
 No. You can bring a result list, figure list, abstract, outline, proposal aim, discussion paragraph, cover letter, or rebuttal draft.
@@ -41,6 +49,7 @@ Provide:
 - The story follows lab chronology instead of reader logic.
 - The abstract says "important" but does not define a real gap.
 - Figures list results without moving belief.
+- The cleanest narrative hides the result that would make a reviewer trust it.
 - The claim turns association into causation.
 - A domain example is copied into the wrong field.
 - The output hides limitations to sound stronger.

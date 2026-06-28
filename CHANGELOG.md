@@ -20,6 +20,9 @@ All notable changes to `good-story` are tracked here.
 
 ### Changed
 
+- Added the audience contract rule: a good research story must work for editors, reviewers, and field readers at the same time.
+- Expanded story-governance guidance with narrative-risk checks against overly clean stories, hidden limitations, and autobiography-style result ordering.
+- Updated public docs and source mapping with Nature Masterclasses and Nature Methods framing on narrative, clarity, and evidence-bounded storytelling.
 - Rebuilt the README hero image as an integrated banner matching the `good-question` visual system, and updated README asset paths.
 - Updated the README status badge from Release Candidate to Mature.
 - Published the public GitHub repository at `https://github.com/Rimagination/good-story` and updated release status docs accordingly.

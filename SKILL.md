@@ -38,6 +38,16 @@ When frameworks conflict, use this priority order:
 
 Lower layers may sharpen higher layers but may not override them.
 
+## Audience Contract Rule
+
+A good paper story must satisfy three different readers at once:
+
+- The editor needs to see why the contribution matters and why the paper deserves attention now.
+- The reviewer needs to see that every important claim is supported by evidence, logic, qualifiers, and answers to likely objections.
+- The field reader needs to understand and remember the one thing they can now think, measure, predict, build, or do differently.
+
+When diagnosing a story, do not optimize only for drama or only for completeness. Make the story easy to notice, easy to evaluate, and hard to misread.
+
 ## Project Scope
 
 `good-story` is a general research-writing skill, not an ecology skill or a fixed list of supported domains. Its core story logic can be used by researchers from any evidence-based field once the field's materials, evidence hierarchy, claim verbs, audience contract, and review risks are calibrated.
@@ -50,6 +60,7 @@ Domain examples are domain calibration packs (领域校准包), not skill bounda
    - Extract the strongest claims, datasets, methods, contrasts, negative results, controls, limitations, and audience.
    - Separate direct evidence from interpretation, speculation, and background.
    - If a manuscript, outline, figure list, or results table is present, map each part to its current narrative job.
+   - Name the audience contract: what an editor, reviewer, and field reader each need from the paper.
 
 2. Find the story candidates.
    - Identify the protagonist: phenomenon, mechanism, method, organism, dataset, theory, or field problem.
@@ -72,6 +83,7 @@ Domain examples are domain calibration packs (领域校准包), not skill bounda
    - Name the tension it resolves.
    - Name the evidence that makes the resolution believable.
    - Name the audience it activates.
+   - Name how the story serves the editor, the reviewer, and the field reader.
    - Name the retellable sentence a reader could carry away.
    - Name any fragility: missing controls, weak causal link, narrow generality, or overclaim risk.
 
@@ -86,6 +98,9 @@ Use these tests aggressively:
 - Antagonist test: Is there a real obstacle, contradiction, or uncertainty, not just "little is known"?
 - Causality test: Are causal words backed by causal evidence?
 - Scope test: Is the claim as general as the evidence, but no more?
+- Audience contract test: Would an editor see stakes, a reviewer see warranted logic, and a reader remember the central contribution?
+- Autobiography test: Is the manuscript telling how the authors did the project, or how readers should come to believe the conclusion?
+- Narrative risk test: Has a clean story hidden negative results, limiting evidence, alternative explanations, or uncertainty the reader needs?
 - Memory test: What phrase would a reader remember one year later?
 - Time-layer test: Is this paper strong because of modern framing craft, because of a naturally powerful classic problem, or because it has both?
 

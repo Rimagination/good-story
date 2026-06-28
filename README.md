@@ -25,10 +25,19 @@
 
 一句话说：**它把“我有一堆结果”，变成“我有一个站得住、讲得清、别人记得住的科学故事”。**
 
+它不会把弱证据包装成强结论。它做的是把最诚实、最有证据支撑的故事变得更容易被看见、被评估、被记住。
+
+### 为什么讲故事重要
+
+科研写作不是把实验日志按时间顺序抄一遍。论文要面对的是注意力有限、标准很高、还带着质疑来读的真实读者：编辑要先看见这篇文章为什么值得进入审稿，审稿人要能沿着证据链检查每个判断，领域读者要能带走一个清楚的新认识。
+
+这也是为什么很多科学写作资料反复强调“故事”：Mensh & Kording 把论文结构收束到一个中心贡献，Sanes 直接说科学论文需要讲故事，Nature Masterclasses 也把主线和关键结论列为研究者写作中的核心挑战。[2][5][24][25] 但这里的故事不是编剧情。Nature Methods 对科学叙事的提醒很重要：故事可以帮助理解，也可能在追求“完美叙事”时诱导挑选证据、遮住失败实验或不确定性。[16] 所以 `good-story` 的底线是：故事必须服务证据，而不是替证据表演。
+
 ### 先看这里
 
 | 你现在想做什么 | 直接去这里 |
 |---|---|
+| 先理解为什么要讲故事 | [为什么讲故事重要](#为什么讲故事重要) |
 | 先判断它适不适合你 | [什么时候用它](#什么时候用它) |
 | 直接复制提示词开跑 | [复制这些提示词](#复制这些提示词) |
 | 看它到底怎么改 | [看几个真实例子](#看几个真实例子) |
@@ -138,6 +147,8 @@
 4. **换领域时，先换证据标准。** 生态、遥感、AI4Science、社会科学、生物医学等领域的证据标准不同；同一套故事框架可以共用，但结论能说多强、审稿人会先挑什么，必须按领域来。
 5. **既学经典问题，也学现代写法。** 经典论文常教“问题为什么有力量”，近年论文常教“如何让忙碌读者迅速看懂”。两者都需要。[20][21][22][23]
 
+它还会检查“受众契约”：编辑需要看见意义和时机，审稿人需要检查证据、逻辑和限定条件，领域读者需要记住这篇文章到底让他们以后能怎样想、怎样测量、怎样判断。好的论文故事要同时服务这三类读者，不能为了更戏剧化而藏起不确定性。[2][5][24][25]
+
 ### 不同领域怎么用
 
 `good-story` 不是生态学专用，也不只支持下面几个领域。下面这张表只是提醒你：不同领域在讲故事之前，要先弄清的东西不一样。
@@ -208,6 +219,8 @@ git clone https://github.com/Rimagination/good-story.git ~/.claude/skills/good-s
 | Heilmeier Catechism [10] | proposal 要说清楚目标、受众、风险和成功标准 |
 | EQUATOR / anti-spin / avoid hype [17][18][19] | 透明报告、限制、负结果和不过度解释是底线 |
 | High-impact paper patterns [20][21][22][23] | 从经典和高影响论文学习可复用的故事结构 |
+| Nature Masterclasses [24][25] | 主线、关键结论、受众目的，以及为什么在拥挤文献中让人理解和记住很重要 |
+| Nature Methods [16] | 叙事可以帮助理解科学，但不能成为挑选证据、隐藏失败实验或回避不确定性的理由 |
 
 ### 质量保障
 
@@ -310,6 +323,8 @@ good-story/
 
 它也不会把每个结果都包装成 "high impact"。如果最诚实的故事是边界条件、负结果、方法限制或更窄的机制，它会建议把故事收窄到能站住的地方。
 
+最顺的故事不一定是最好的故事。如果负结果、失败尝试、关键限制或替代解释会改变读者对结论的判断，它们就应该进入故事边界，而不是被藏在叙事后面。
+
 ### 相关项目
 
 - [Rimagination/good-question](https://github.com/Rimagination/good-question): 帮研究者把模糊方向打磨成值得投入的科研问题。`good-question` 处理“问题值不值得做”，`good-story` 处理“已有证据怎样讲成站得住的论文故事”。
@@ -326,10 +341,19 @@ Use it when you already have results, figures, models, materials, interviews, re
 
 In one sentence: **it turns "I have many results" into "I have a scientific story that is evidence-faithful and memorable."**
 
+It does not make weak evidence look strong. It makes the strongest honest story easier to see, evaluate, remember, and review.
+
+### Why Story Matters
+
+Research writing is not a chronological lab log. A paper is read by people with limited attention, high standards, and legitimate skepticism: editors need to see why the work deserves review, reviewers need to inspect the evidence chain, and field readers need to leave with one clear new understanding.
+
+That is why scientific-writing sources keep returning to story. Mensh & Kording center the paper around one contribution, Sanes argues that scientific articles benefit from story construction, and Nature Masterclasses treats storyline and key conclusions as a major writing challenge for researchers. [2][5][24][25] But story is not license to invent drama. Nature Methods gives the necessary caution: narrative can aid understanding, but the pursuit of a perfect story can encourage cherry-picking, obscured failed experiments, or hidden uncertainty. [16] The boundary condition for `good-story` is therefore simple: story must organize evidence, not perform in place of it.
+
 ### Start Here
 
 | What you want | Go here |
 |---|---|
+| Understand why story matters | [Why Story Matters](#why-story-matters) |
 | Decide whether this fits your task | [When To Use It](#when-to-use-it) |
 | Copy a prompt and start | [Copy These Prompts](#copy-these-prompts) |
 | See what it changes | [See Examples](#see-examples) |
@@ -437,6 +461,8 @@ Polishing makes sentences smoother. `good-story` first tests whether the story c
 4. **It calibrates the domain before telling the story.** Ecology, remote sensing, AI4Science, social science, biomedicine, and other fields have different evidence standards and review risks.
 5. **It learns from both classic problems and modern framing.** Classic papers often teach problem power; recent papers often teach how busy readers are guided. [20][21][22][23]
 
+It also tests the audience contract. Editors need to see the stakes, reviewers need to inspect the logic, and field readers need to remember the contribution. A good story should serve all three without hiding uncertainty.
+
 ### Field Use
 
 `good-story` is not ecology-only and not limited to the fields below. The table shows what different users should calibrate first.
@@ -507,6 +533,8 @@ This is not just a prompt bundle. It turns scientific-writing advice from reliab
 | Heilmeier Catechism [10] | Proposals need goals, audience, risks, and success criteria |
 | EQUATOR / anti-spin / avoid hype [17][18][19] | Transparent reporting, limitations, negative results, and no over-interpretation |
 | High-impact paper patterns [20][21][22][23] | Reusable story structures from classic and high-impact papers |
+| Nature Masterclasses [24][25] | Storyline, key conclusions, audience purpose, and why memorable communication matters in a crowded literature |
+| Nature Methods [16] | The caution that narrative can illuminate science but must not become an excuse for cherry-picking or hiding uncertainty |
 
 ### Quality Checks
 
@@ -609,6 +637,8 @@ good-story/
 
 It also should not make every result look "high impact." If the strongest honest story is a boundary condition, negative result, method limitation, or narrower mechanism, it should narrow the story until it can stand.
 
+The cleanest story is not always the best story. If a negative result, failed experiment, limitation, or alternative explanation changes the interpretation, it belongs in the story's evidence boundary.
+
 ### Related Project
 
 - [Rimagination/good-question](https://github.com/Rimagination/good-question): sharpens rough directions into research questions worth pursuing. `good-question` helps decide whether a question deserves work; `good-story` helps turn existing evidence into a defensible paper story.
@@ -642,3 +672,5 @@ The references below are cited as methodological sources for the skill, not as d
 21. Hanahan, D., & Weinberg, R. A. (2000). The Hallmarks of Cancer. *Cell*. https://pubmed.ncbi.nlm.nih.gov/10647931/
 22. Jinek, M., et al. (2012). A programmable dual-RNA-guided DNA endonuclease in adaptive bacterial immunity. *Science*. https://pubmed.ncbi.nlm.nih.gov/22745249/
 23. Jumper, J., et al. (2021). Highly accurate protein structure prediction with AlphaFold. *Nature*. https://doi.org/10.1038/s41586-021-03819-2
+24. Nature Masterclasses. Writing a Research Paper 2nd Edition. https://www.nature.com/masterclasses/writing-a-research-paper-2nd-edition/26698806
+25. Nature Masterclasses. Narrative Tools for Researchers. https://www.nature.com/masterclasses/narrative-tools-for-researchers/18760532
